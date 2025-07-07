@@ -65,10 +65,4 @@ ngrok http 8000
    - Откройте http://localhost:4040 для ngrok web interface
    - Проверьте http://localhost:8000/docs для FastAPI документации
 
-## Исправленные ошибки
 
-- Убран неправильный импорт `from .env import ...`
-- Обновлен код для новой версии OpenAI API (v1+)
-- Добавлена правильная инициализация OpenAI клиента
-- Исправлен вызов `openai_client.chat.completions.create()` вместо устаревшего `openai.ChatCompletion.create()`
-- Улучшена обработка переменных окружения
